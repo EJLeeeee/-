@@ -105,7 +105,68 @@
         .one>.gnb>.menu>li>.submenu>li>a:hover {
             color: yellow;
         }
-
+        .login {
+            position: absolute;
+            box-sizing:border-box;
+            display: block;
+            padding-top: 100px;
+            width: 1500px;
+            justify-content: center;
+            }
+        .login>.id {
+            
+            /* height: 45px; */
+            /* width: 1200px; */
+            /* border: 1px solid gray; */
+            
+            width: 100%;
+            line-height: 1.2;
+            
+        }
+        .login>.id>input {
+            height: 45px;
+            width: 80%;
+            position: relative;
+            font-size: 1,2rem;
+            
+        }
+        .login>.pw {
+            
+            /* height: 45px; */
+            /* width: 1200px; */
+            /* border: 0.5px solid gray; */
+            width: 100%;
+            line-height: 1.2;
+        }
+        .login>.pw>input {
+            height: 45px;
+            width: 80%;
+            border: 0.5px solid gray;
+            position: relative;
+            font-size: 1,2rem;
+         }
+        .login>.chk>input {
+            margin-top: 10px;
+            position: relative;
+            font-size: 1,2rem;
+            margin-bottom: 10px;
+            
+        }
+        .btn{
+            display: block;
+            width: 80%;
+            height: 45px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            font-weight: 700px;
+            font-size: 1,2rem;
+            
+        }
+        .btn--primary{
+            background-color: rgb(28,92,57);
+        }
+        
     </style>
 </head>
 <body>
@@ -172,6 +233,20 @@
                 </li>
             </ul>
         </nav>
+    </div>
+    <div class="login">
+        <div class="id"><input type="text" value placeholder="이메일"></div>
+        <div class="pw"><input type="text" value placeholder="비밀번호"></div>
+        <div class="chk">
+        <input type="checkbox"><label> 로그인상태유지</label>
+        <a href="##" id="a1" class="btn btn--primary">로그인</a>
+        </div>
+        <div class="over_h">
+            <a href="" class="sign-in">회원가입</a>
+            <a href="" class="trouver">아이디 · 비밀번호 찾기</a>
+        </div>
+
+        
     </div>
     <!-- <div style="height: 600px; width: 1135px; margin-right: 0px;">
         <img src="./img/3c33583bc114a.jpg" alt="">
